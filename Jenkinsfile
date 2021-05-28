@@ -16,6 +16,7 @@ pipeline {
                   //zip zipFile: 'test.zip', archive: false, dir: 'folder1'
                   sh 'zip -r test.zip .'
                   sh 'ls'
+                    sh 'mvn -v'
                 }
             }
         }
